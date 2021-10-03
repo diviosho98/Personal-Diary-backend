@@ -18,6 +18,7 @@ const StorySchema = new Schema({
         type: Date,
         default: Date.now
     },
-});
+}, { timestamps: true }
+);
 
 module.exports = mongoose.model('story',StorySchema);
